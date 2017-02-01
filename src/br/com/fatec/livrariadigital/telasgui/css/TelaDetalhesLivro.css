@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/04/2016, 08:16:19
+    Author     : Victor
+*/
+
+.btn-limpar{
+    -fx-background-color: #EA6153;
+    -fx-pref-width :180;
+    -fx-pref-height:40;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.btn-limpar:hover{
+    -fx-background-color: #e74c3c;
+    -fx-pref-width :180;
+    -fx-pref-height:40;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.btn-finalizar{
+    -fx-background-color: #E67E22; 
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width :180;
+    -fx-pref-height:20;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.btn-finalizar:hover{
+    -fx-background-color: #d35400;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width :180;
+    -fx-pref-height:20;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.fields{
+ -fx-background-color:#FFFFFF;
+ -fx-pref-width :280;
+ -fx-pref-height:35;
+ -fx-background-radius:0 0 0 0;
+ -fx-background-insets: 0, 0, 0;
+ -fx-pref-width :170;
+ -fx-pref-height:40;
+}
+
+.lbl1:hover{
+    -fx-text-fill: black;
+}
+
+.btn-voltar{    
+    -fx-background-color: #E67E22;
+    -fx-pref-width :180;
+    -fx-pref-height:30;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.btn-voltar:hover{
+    -fx-background-color: #d35400;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width :180;
+    -fx-pref-height:30;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.combo-box {
+    -fx-font-size : 15pt;
+    -fx-font-family: Open Sans Extrabold;
+    -fx-padding: 0 0 0 30;
+    -fx-prompt-text-fill: #bdc3c7;
+    -fx-border: 0px solid;
+    -fx-background-color:white;
+    -fx-background-radius:0 0 0 0;
+    -fx-pref-width :300;
+    -fx-pref-height:40;
+}
+
+
+.combo-box.arrow, .arrow-button{
+    -fx-background-color:white;
+    -fx-background-radius:0 0 0 0;
+    -fx-font-size: 30;
+}
+
+.combo-box.arrow, .combo-box .arrow{
+    -fx-background-color:#33495F;
+    -fx-background-radius:0 0 0 0;
+}
+
+.combo-box-popup .list-view {
+    -fx-text-align: center;
+    -fx-font: Open Sans Extrabold;
+    -fx-font-size : 15pt;
+}
+
+/*added this in an edit*/
+.combo-box-popup .list-view .list-cell {
+    -fx-text-align: center;
+    -fx-font: Open Sans Extrabold;
+    -fx-padding: -1 -1 -1 40;
+}

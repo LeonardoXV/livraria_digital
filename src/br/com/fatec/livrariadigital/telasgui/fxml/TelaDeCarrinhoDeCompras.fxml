@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="865.0" prefWidth="1009.0" stylesheets="@../css/TelasCadastrados.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.livrariadigital.telasgui.TelaDeEditorasCadastradas">
+   <children>
+      <VBox alignment="CENTER" prefHeight="839.0" prefWidth="999.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane accessibleRole="COMBO_BOX" prefHeight="827.0" prefWidth="999.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="111.0" prefWidth="504.0">
+                     <children>
+                        <Label text="CARRINHO DE COMPRAS" textFill="#2c3e50">
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <ListView fx:id="lista" layoutX="41.0" layoutY="279.0" onMouseClicked="#handlerClickListViewItem" prefHeight="488.0" prefWidth="394.0" styleClass="listView" />
+                  <ToolBar layoutX="40.0" layoutY="240.0" prefHeight="40.0" prefWidth="394.0" styleClass="toolbar" />
+                  <HBox alignment="CENTER" layoutX="40.0" layoutY="240.0" prefHeight="40.0" prefWidth="394.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="110.0" text="LIVROS" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="234.0" fitWidth="174.0" layoutX="504.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" />
+                  <ToolBar layoutX="504.0" layoutY="474.0" prefHeight="40.0" prefWidth="394.0" style="-fx-background-color: #2c3e50;" styleClass="toolbar" />
+                  <TextArea layoutX="504.0" layoutY="514.0" prefHeight="256.0" prefWidth="394.0" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

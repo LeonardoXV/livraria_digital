@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="1037.0" stylesheets="@../css/TelaDeAdministrador.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.livrariadigital.telasgui.TelaDeAdministrador">
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="781.0" prefWidth="235.0" styleClass="body" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="127.0" prefWidth="216.0">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logoLivraria.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="31.0" prefWidth="158.0" text="OLÁ, USUÁRIO" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="44.0" prefWidth="235.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="61.0" text="LOJA" textFill="#e67e22" wrapText="true">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="38.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="217.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@inicio.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#handlerInicio" prefHeight="36.0" prefWidth="157.0" styleClass="btn_livros" text="INÍCIO   " textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="42.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pedidos.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="PEDIDOS" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets right="40.0" />
+                           </padding></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="39.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@clientes.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="CLIENTES" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets right="40.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@livro.png" />
+                           </image>
+                        </ImageView>
+                        <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="31.0" prefWidth="151.0" styleClass="btn_livros" text="LIVRO" textFill="WHITE">
+                          <items>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#chamarCadastroLivros" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRAR">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#chamarLivro" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRADOS">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                          </items>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children></VBox>
+            <VBox prefHeight="41.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="37.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@autor.png" />
+                           </image>
+                        </ImageView>
+                        <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="31.0" prefWidth="154.0" styleClass="btn_livros" text="AUTORES" textFill="WHITE">
+                           <items>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#chamarCadastroAutor" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRAR">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#chamarAutor" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRADOS">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                           </items>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="15.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="43.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@editoras.png" />
+                           </image>
+                        </ImageView>
+                        <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="31.0" prefWidth="154.0" styleClass="btn_livros" text="EDITORAS" textFill="WHITE">
+                           <items>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#chamarCadastroEditora" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRAR">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#chamarEditora" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRADAS">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                           </items>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="58.0" prefWidth="235.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="123.0" text="USUÁRIOS" textFill="#26a65b" wrapText="true">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="105.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@usuarios.png" />
+                           </image>
+                        </ImageView>
+                        <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="31.0" prefWidth="154.0" styleClass="btn_livros" text="USUÁRIOS" textFill="WHITE">
+                           <items>
+                              <CustomMenuItem mnemonicParsing="false" onAction="#handleUsuarios" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="CADASTRAR">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                              <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                                 <content>
+                                    <Button mnemonicParsing="false" onAction="#handlerChamarUsuario" style="-fx-background-color: transparent;" text="CADASTRADOS">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </content>
+                              </CustomMenuItem>
+                           </items>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="15.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@editar.png" />
+                           </image>
+                        </ImageView>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="EDITAR PERFIL" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="51.0" prefWidth="235.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sair.png" />
+                                 </image>
+                              </ImageView>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSair" prefHeight="36.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="SAIR" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Open Sans Extrabold" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="110.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

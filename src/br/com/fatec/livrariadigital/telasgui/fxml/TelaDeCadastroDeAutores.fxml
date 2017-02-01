@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="951.0" stylesheets="@../css/TelaDeCadastroDeAutores.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.livrariadigital.telasgui.TelaDeCadastroDeAutores">
+   <children>
+      <VBox alignment="CENTER" prefHeight="706.0" prefWidth="938.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane accessibleRole="COMBO_BOX" prefHeight="523.0" prefWidth="945.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="111.0" prefWidth="504.0">
+                     <children>
+                        <Label fx:id="labelAutores" text="CADASTRO DE AUTORES" textFill="#2c3e50">
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="150.0" prefHeight="0.0" prefWidth="912.0">
+                     <children>
+                        <TextField fx:id="txtNome" alignment="CENTER" prefHeight="47.0" prefWidth="636.0" promptText="NOME DO AUTOR" styleClass="fields3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="17.0" layoutY="690.0" prefHeight="34.0" prefWidth="408.0" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="690.0" prefHeight="102.0" prefWidth="237.0">
+                     <children>
+                        <Button fx:id="buttonDeletar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handlerDeletarAutores" prefHeight="62.0" prefWidth="75.0" style="-fx-background-color: transparent;" styleClass="remover">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="buttonAlterar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handlerAtualizarAutores" prefHeight="62.0" prefWidth="75.0" style="-fx-background-color: transparent;" styleClass="editar">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="buttonCadastrar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handlerCadastrarAutores" prefHeight="62.0" prefWidth="75.0" style="-fx-background-color: transparent;" styleClass="gravar">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="205.0" prefHeight="34.0" prefWidth="248.0">
+                     <children>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtDataNasce" alignment="CENTER" prefHeight="34.0" prefWidth="491.0" promptText="DATA NASCIMENTO" styleClass="fields3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="300.0" layoutY="205.0" prefHeight="34.0" prefWidth="408.0">
+                     <children>
+                        <TextField fx:id="txtLocalNasc" alignment="CENTER" prefHeight="34.0" prefWidth="192.0" promptText="LOCAL NASCIMENTO" styleClass="fields3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="80.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="47.0" layoutY="310.0" prefHeight="224.0" prefWidth="872.0">
+                     <children>
+                        <TextField fx:id="txtBiografia" alignment="TOP_CENTER" prefHeight="184.0" prefWidth="735.0" promptText="BIOGRAFIA" styleClass="fields5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="80.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="260.0" prefHeight="34.0" prefWidth="248.0">
+                     <children>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtDataFale" alignment="CENTER" onMouseMoved="#handleKeyEvent" prefHeight="34.0" prefWidth="491.0" promptText="DATA FALECIMENTO" styleClass="fields3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="300.0" layoutY="260.0" prefHeight="34.0" prefWidth="408.0">
+                     <children>
+                        <TextField fx:id="txtLocalMorte" alignment="CENTER" prefHeight="34.0" prefWidth="192.0" promptText="LOCAL MORTE" styleClass="fields3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="80.0" />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

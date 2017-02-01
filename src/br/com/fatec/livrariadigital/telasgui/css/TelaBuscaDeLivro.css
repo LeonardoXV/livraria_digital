@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/04/2016, 14:10:16
+    Author     : Victor
+*/
+
+.btn-busca{
+    -fx-background-color: #E67E22;
+    -fx-pref-width :180;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-height:40;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.lbl2:hover{
+    -fx-text-fill: black;
+}
+
+.btn-busca:hover{
+    -fx-background-color: #d35400;
+    -fx-pref-width :180;
+    -fx-pref-height:40;
+    -fx-border: 0px solid;
+    -fx-background-radius:0 0 0 0;
+}
+
+.fields{
+ -fx-background-color:#FFFFFF;
+ -fx-pref-width :280;
+ -fx-pref-height:35;
+ -fx-background-radius:0 0 0 0;
+ -fx-background-insets: 0, 0, 0;
+ -fx-pref-width :170;
+ -fx-pref-height:40;
+}
+
+.combo-box {
+    -fx-prompt-text-fill: #bdc3c7;
+    -fx-border: 0px solid;
+    -fx-background-color:white;
+    -fx-background-radius:0 0 0 0;
+    -fx-pref-width :300;
+    -fx-pref-height:40;
+}
+
+
+.combo-box.arrow, .arrow-button{
+    -fx-background-color:white;
+    -fx-background-radius:0 0 0 0;
+    -fx-font-size: 30;
+}
+
+.combo-box.arrow, .combo-box .arrow{
+    -fx-background-color:#33495F;
+    -fx-background-radius:0 0 0 0;
+}

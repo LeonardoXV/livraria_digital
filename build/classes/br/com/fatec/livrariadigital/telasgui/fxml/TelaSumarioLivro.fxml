@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.livrariadigital.telasgui.controllers.TelaSumarioLivroController">
+   <children>
+      <VBox layoutX="14.0" layoutY="-33.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="426.0" prefWidth="671.0">
+               <children>
+                  <VBox prefHeight="42.0" prefWidth="615.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="671.0" text="INFORMAÇÕES ADICIONAIS" textAlignment="CENTER" textFill="#33495f">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="87.0" prefWidth="615.0">
+                     <children>
+                        <Label text="LIVRO" textFill="#26a65b">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nomeLivro" text="NOME:">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="isbnLivro" text="ISBN:">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="formatoLivro" prefHeight="24.0" prefWidth="191.0" text="FORMATO DO LIVRO:">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="paginaLivro" text="NUMERO DE PAGINAS:">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dataPublica" text="DATA DE PUBLICAÇÃO:">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="livroEditora" text="EDITORA: ">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sumarioLivro" alignment="CENTER" prefHeight="27.0" prefWidth="673.0" text="ÍNDICE:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="txt_sumario" editable="false" maxWidth="500.0" prefColumnCount="20" prefHeight="129.0" prefRowCount="200" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets left="85.0" />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+            <VBox prefHeight="43.0" prefWidth="671.0" />
+            <VBox prefHeight="175.0" prefWidth="615.0">
+               <children>
+                  <Label text="AUTOR" textFill="#26a65b">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomeAutor" text="NOME:">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataAutor" text="DATA NASCIMENTO:">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="localAutor" text="LOCAL NASCIMENTO:">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1009.0" stylesheets="@../css/TelaDeCadastroDeLivros.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.livrariadigital.telasgui.TelaDeCadastroDeLivros">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="1025.0" prefWidth="999.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane accessibleRole="COMBO_BOX" prefHeight="1025.0" prefWidth="933.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="111.0" prefWidth="504.0">
+                     <children>
+                        <Label fx:id="labelLivros" text="CADASTRO DE LIVROS" textFill="#2c3e50">
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <HBox alignment="CENTER" layoutX="7.0" layoutY="110.0" prefHeight="34.0" prefWidth="707.0">
+                     <children>
+                        <TextField fx:id="txtIsbn" alignment="CENTER" prefHeight="34.0" prefWidth="180.0" promptText="ISBN" styleClass="fields">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextField>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtNumPaginas" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="205.0" promptText="PÁGINAS" styleClass="fields1">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtPrecoDeVenda" alignment="CENTER" prefHeight="34.0" prefWidth="219.0" promptText="PREÇO DE VENDA" styleClass="fields">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="170.0" prefHeight="34.0" prefWidth="707.0">
+                     <children>
+                        <TextField fx:id="txtTitulo" alignment="CENTER" minWidth="300.0" prefHeight="34.0" prefWidth="407.0" promptText="TÍTULO DO LIVRO" styleClass="fields3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextField>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtPrecoCusto" alignment="CENTER" prefHeight="34.0" prefWidth="240.0" promptText="PREÇO DE CUSTO" styleClass="fields">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="43.0" layoutY="230.0" prefHeight="205.0" prefWidth="676.0">
+                     <children>
+                        <TextArea fx:id="txtIndice" prefHeight="205.0" prefWidth="436.0" promptText="ÍNDICE" styleClass="fields5">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </TextArea>
+                        <TextArea fx:id="txtResumo" prefHeight="205.0" prefWidth="341.0" promptText="BREVE RESUMO" styleClass="fields4" wrapText="true">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font></TextArea>
+                     </children>
+                  </HBox>
+                  <Pane layoutX="770.0" layoutY="110.0" prefHeight="316.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="image">
+                     <children>
+                        <ImageView fx:id="imagem" fitHeight="250.0" fitWidth="220.0" pickOnBounds="true" styleClass="image">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </children></Pane>
+                  <Button layoutX="770.0" layoutY="390.0" mnemonicParsing="false" onAction="#handlerSelecionarImagem" prefWidth="250.0" styleClass="btn-carregar" text="CARREGAR IMAGEM" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="15.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="460.0" prefHeight="34.0" prefWidth="386.0">
+                     <children>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtDataDePublicacao" alignment="CENTER" minWidth="139.0" prefHeight="34.0" prefWidth="139.0" promptText="DATA " styleClass="fields">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="40.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                        <br.com.fatec.livrariadigital.telasgui.MaskTextField fx:id="txtQuantidade" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="210.0" promptText="QTD" styleClass="fields1">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </br.com.fatec.livrariadigital.telasgui.MaskTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="414.0" layoutY="457.0" prefHeight="40.0" prefWidth="305.0">
+                     <children>
+                        <ComboBox fx:id="boxFormato" prefHeight="40.0" prefWidth="242.0" promptText="Formato" style="-fx-background-color: #eeeeee;" visibleRowCount="100">
+                           <styleClass>
+                              <String fx:value="fields" />
+                              <String fx:value="comboBox" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="17.0" layoutY="510.0" prefHeight="34.0" prefWidth="408.0">
+                     <children>
+                        <ComboBox fx:id="boxAutores" onAction="#handlerAdicionarAutores" prefWidth="150.0" promptText="Autores" style="-fx-background-color: #eeeeee;" visibleRowCount="100">
+                           <styleClass>
+                              <String fx:value="fields-altores-categorias" />
+                              <String fx:value="comboBox" />
+                           </styleClass>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="17.0" layoutY="690.0" prefHeight="34.0" prefWidth="408.0" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="425.0" layoutY="510.0" prefHeight="80.0" prefWidth="570.0">
+                     <children>
+                        <TextArea fx:id="txtAutores" prefHeight="77.0" prefWidth="511.0" promptText="AUTORES" styleClass="fields4">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="16.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="425.0" layoutY="690.0" prefHeight="69.0" prefWidth="570.0" />
+                  <HBox alignment="CENTER" layoutX="38.0" layoutY="860.0" prefHeight="150.0" prefWidth="953.0" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="504.0" prefHeight="102.0" prefWidth="497.0">
+                     <children>
+                        <Button fx:id="buttonDeletar" mnemonicParsing="false" onAction="#handlerDeletar" prefHeight="58.0" prefWidth="65.0" style="-fx-background-color: transparent;" styleClass="remover">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="buttonAlterar" mnemonicParsing="false" onAction="#handlerAtualizarLivro" prefHeight="58.0" prefWidth="65.0" style="-fx-background-color: transparent;" styleClass="editar">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="buttonCadastrar" mnemonicParsing="false" onAction="#handlerCadastrarLivro" prefHeight="58.0" prefWidth="65.0" style="-fx-background-color: transparent;" styleClass="gravar">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" right="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="773.0" layoutY="457.0" prefHeight="40.0" prefWidth="220.0">
+                     <children>
+                        <ComboBox fx:id="boxEditoras" onAction="#handlerAdicionarEditora" prefHeight="40.0" prefWidth="223.0" promptText="Editoras" style="-fx-background-color: #eeeeee;" visibleRowCount="100">
+                           <styleClass>
+                              <String fx:value="fields" />
+                              <String fx:value="comboBox" />
+                           </styleClass>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="txtCategorias" layoutX="484.0" layoutY="614.0" prefHeight="77.0" prefWidth="511.0" promptText="CATEGORIAS" styleClass="fields4">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="16.0" />
+                     </font>
+                  </TextArea>
+                  <ComboBox fx:id="boxCategorias" layoutX="46.0" layoutY="622.0" onAction="#handlerAdicionarCategoria" prefHeight="34.0" prefWidth="240.0" promptText="Categorias" style="-fx-background-color: #eeeeee;" visibleRowCount="100">
+                     <styleClass>
+                        <String fx:value="fields-altores-categorias" />
+                        <String fx:value="comboBox" />
+                     </styleClass>
+                  </ComboBox>
+                  <Button layoutX="269.0" layoutY="550.0" mnemonicParsing="false" onAction="#limparAutores" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: #EA6153; -fx-border-radius: 0px; -fx-background-radius: 0 0 0 0;" text="LIMPAR" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="271.0" layoutY="662.0" mnemonicParsing="false" onAction="#limparCategorias" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: #EA6153; -fx-border-radius: 0px; -fx-background-radius: 0 0 0 0;" text="LIMPAR" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans Extrabold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

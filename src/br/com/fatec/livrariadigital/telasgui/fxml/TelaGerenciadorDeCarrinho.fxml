@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="762.0" stylesheets="@../css/TelaGerenciadorDeCarrinho.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.livrariadigital.telasgui.TelaGerenciadorDeCarrinho">
+   <children>
+      <VBox layoutX="-14.0" layoutY="6.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="35.0" prefWidth="762.0">
+               <children>
+                  <VBox prefHeight="13.0" prefWidth="762.0" style="-fx-background-color: #E67E22;">
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="762.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="762.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="64.0" prefWidth="199.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleTelaPrincipal" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                             <image>
+                                                <Image url="@logoFlatBranco.fw.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fitHeight="18.0" fitWidth="210.0" onMouseClicked="#handleTelaPrincipal" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img_logo.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="15.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="57.0" prefWidth="32.0" />
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="AÇÃO" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="AVENTURA" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="DRAMA" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="ROMANCE" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="SUSPENSE" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="TERROR" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="BIOGRAFIA" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label onMouseClicked="#handleBuscarCategoria" styleClass="lbl1" text="TECNOLOGIA" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@carrinhoNovo.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="90.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label onMouseClicked="#handleLogin" styleClass="lbl1" text="LOGIN" textFill="WHITE">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="15.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="78.0" prefWidth="762.0">
+               <children>
+                  <VBox prefHeight="57.0" prefWidth="762.0">
+                     <children>
+                        <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" prefHeight="56.0" prefWidth="262.0" text="MEU CARRINHO" textFill="#33495f">
+                           <font>
+                              <Font name="Open Sans Extrabold" size="24.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <Line endX="100.0" stroke="#e67e22" strokeWidth="4.0">
+                     <VBox.margin>
+                        <Insets left="110.0" />
+                     </VBox.margin></Line>
+               </children>
+            </VBox>
+            <VBox prefHeight="308.0" prefWidth="762.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <left>
+                        <VBox prefHeight="263.0" prefWidth="112.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <VBox prefHeight="263.0" prefWidth="114.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <top>
+                        <VBox prefHeight="44.0" prefWidth="762.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <center>
+                        <ListView fx:id="lista" prefHeight="272.0" prefWidth="536.0" style="-fx-border-color: transparent;" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="128.0" prefWidth="762.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <BorderPane prefHeight="69.0" prefWidth="762.0" VBox.vgrow="ALWAYS">
+                     <left>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="127.0" prefWidth="291.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#excluirItem" styleClass="btn-limpar" text="EXCLUIR ITEM" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Extrabold" size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#excluirTudo" prefHeight="31.0" prefWidth="175.0" styleClass="btn-limpar" text="LIMPAR CARRINHO" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Extrabold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </left>
+                     <right>
+                        <VBox alignment="CENTER_LEFT" prefHeight="127.0" prefWidth="289.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" styleClass="btn-finalizar" text="FINALIZAR COMPRA" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Extrabold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </right>
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="127.0" prefWidth="289.0" BorderPane.alignment="CENTER_RIGHT">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="253.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="389.0" text="TOTAL: " textFill="#2ecc71">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="21.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="150.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbl_total" text="R$ 00.00" textFill="#2ecc71">
+                                       <font>
+                                          <Font name="Open Sans Extrabold" size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

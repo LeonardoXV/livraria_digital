@@ -1,0 +1,10 @@
+br/com/fatec/livrariadigital/entidades/Livro_.java
+br/com/fatec/livrariadigital/entidades/Informacoes_.java
+br/com/fatec/livrariadigital/entidades/ItemPedido_.java
+br/com/fatec/livrariadigital/entidades/Categoria_.java
+br/com/fatec/livrariadigital/entidades/Autor_.java
+br/com/fatec/livrariadigital/entidades/Detalhes_.java
+br/com/fatec/livrariadigital/entidades/Usuario_.java
+br/com/fatec/livrariadigital/entidades/Editora_.java
+br/com/fatec/livrariadigital/entidades/Carrinho_.java
+br/com/fatec/livrariadigital/entidades/Pedido_.java
